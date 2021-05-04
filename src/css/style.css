@@ -1,0 +1,627 @@
+
+/*@font-face {
+	font-family: "JF Flat Regular";
+	src: url(../fonts/JF-Flat-regular.eot);
+    src: url(../fonts/JF-Flat-regular.eot?#iefix) format('embedded-opentype'),
+         url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+         url(../fonts/JF-Flat-regular.woff) format('woff'),
+         url(../fonts/JF-Flat-regular.ttf) format('truetype');
+	font-weight: bolder;
+	font-style: normal
+}*/
+/* katibeh-regular - latin */
+@font-face {
+    font-family: 'Katibeh';
+    font-style: normal;
+    font-weight:bolder ;
+    src: url('../fonts/katibeh-v12-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/katibeh-v12-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/katibeh-v12-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/katibeh-v12-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/katibeh-v12-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/katibeh-v12-latin-regular.svg#Katibeh') format('svg'); /* Legacy iOS */
+  }
+
+body{
+    font-family: "katibeh-v12-latin-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+     font-size: 25px;
+     color:#555555;
+     direction: rtl;
+    overflow-x: hidden;
+   
+}  
+
+.container{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*********
+ main page firm
+**********/
+nav.navbar{
+  background: rgba(7, 231, 201, 0.925);
+  background: linear-gradient(to left ,
+  rgba(7, 231, 201, 0.925)0%,
+  rgba(242,220,230),
+  rgba(244,218,225,0.8)100%);
+  padding: 0 0;
+}
+
+nav.navbar a img{
+  max-width: 17%;
+  text-align: right !important;
+  margin-left: 1170px;
+  padding:0px 30px;
+}
+header {
+    min-height: 50vh;
+    top: 15px;
+    background-image: url(../images/bg-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: -3;
+    text-align: right;
+}
+header .overlay{
+    background: rgba(7, 231, 201, 0.925);
+    background: linear-gradient(to left ,
+    rgba(7, 231, 201, 0.925)0%,
+    rgba(242,220,230),
+    rgba(244,218,225,0.8)100%);
+    min-height: 100vh;
+}
+ul.navbar-nav{
+  padding: 0 0;
+}
+nav.navbar .navbar-collapse ul li a {
+  font-size: 18px;
+  color:#171717;
+  margin: 0 ;
+  margin-left: 4px;
+ white-space: nowrap;
+}
+nav.navbar .navbar-collapse ul li a:hover{
+  color: indianred;
+}
+/*header .overlay a img {
+    max-width: 17%;
+    text-align: right;
+ /*   margin-left: 1155px;
+    margin-top: 20px;
+    padding:0 30px;
+}
+header .overlay a.register-into {
+ margin-right: 750px;
+ margin-left: 10px;
+  text-decoration: none;
+  font-size: 30px;
+  color: #171717;
+}
+header .overlay a.register-account {
+  
+   text-decoration: none;
+   font-size: 30px;
+   color: #171717;
+ }*/
+ 
+header  .overlay .title h1 {
+    top:30px;
+   
+    bottom: 10px;
+    padding: 150px 30px;
+    color:indianred;
+}
+header  .overlay .paragrarphdefined p{
+ 
+    line-height: 81px;
+    font-size: 32px;
+    padding: 0px 54px;
+
+}
+
+/****************
+ main page setvics
+****************/
+section.services {
+    bottom:    40px ;
+    
+}
+section.services  h1.ser {
+  /*  border-top:2px solid   indianred
+;;*/
+    text-align: center !important;
+    color:  indianred
+;
+    top:10px;
+    bottom: 50px;
+    padding: 40px 265px;
+    margin-right: 528px;
+    margin-top: 40px;
+}
+section.services .icon-serv  {
+    font-size: 20px;
+    border: 2px ; 
+    border-radius: 50%;
+    line-height: 20px;
+    margin-bottom: 20px;
+    color:  indianred !important;
+}
+section.services h4{
+    font-size: 20px;
+    margin: 15px 30px;
+    bottom: 10px;
+    color: rgb(54, 52, 52);
+}
+section.services p {
+    font-size: 20px;
+    padding: 0 10px;
+    line-height: 40px;
+    bottom: 60px !important;
+}
+/****************
+main page tours 
+*****************/
+section.tours{
+    margin: 40px 40px;
+}
+section.tours h1{
+    
+    text-align: center !important;
+    color:  indianred;
+    top:10px;
+    bottom: 80px;
+    padding: 40px 265px;
+    margin-right: 412px;
+    margin-top: 40px;
+}
+section.tours .card{
+margin-right: 30px;
+padding: 10px;
+}
+section.tours .card .card-body p
+{   font-weight: bolder;
+    font-size: 20px;
+    padding: 5px;
+}
+section.tours .card .btn-main-tours{
+    padding:5px 10px;
+    border: 2px solid   indianred;
+    border-radius: 3px;
+ background-color:#fff;
+ color:   indianred;
+}
+section.tours .card .btn-main-tours:hover{
+background-color:   indianred;
+color: #fff;
+}
+/***************
+footer main page
+******************/
+footer {
+    background-color: indianred;
+    padding: 75px 0;
+    text-align: right;
+  }
+  footer .col-6{
+   padding-right: 30px;
+  }
+  footer  h3 {
+    font-size: 18px;
+    line-height: 45px;
+    color:  #171717;
+    margin-bottom: 30px;
+    position: relative; 
+}
+footer  h3:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 35px;
+    height: 2px;
+    background-color: #5c5c5c; 
+
+}
+footer ul {
+    padding: 0; 
+  }
+  footer ul.social li a i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #333333;
+    color: #acacac;
+    transition: all 0.3s ease; 
+  }
+  footer ul.social li {
+    margin-right: 5px; 
+  }
+
+footer ul.contact-us li {
+    margin-bottom: 35px;
+    font-size: 18px;
+    color: #676767; 
+  }
+  footer  ul.contact-us li:last-of-type {
+    margin-bottom: 0;
+  }
+  footer  ul.contact-us li i {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #333333;
+    color: #acacac;
+    margin-left: 20px;
+  }
+ 
+/********************
+tours psges
+********************/
+section.round-tours .title h1{
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+section.round-tours .title h3 {
+  padding: 10px 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+
+
+}
+section.round-tours h5{
+  padding: 10px 30px;
+  margin-right: 20px;
+  margin-bottom: 25px;
+  font-weight: bolder;
+  color: #171717;
+}
+section.round-tours  p {
+font-size: 20px;
+padding: 10px 50px;
+line-height: 40px;
+}
+section.round-tours .img-hover-zoom img {
+  transition: transform .5s ease;
+  height: 200px; width: 350px;
+  overflow: hidden;
+  bottom: 40px !important;
+}
+section.round-tours .img-hover-zoom:hover img {
+  transform: scale(.8);
+}
+
+/*
+section.round-tours .zoomin img{
+    height: 200px; width: 350px;
+   /* -webkit-transition: all 2s ease;
+   -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+    transition: transform .5s ease;
+    overflow: hidden;
+}*/
+/*section.round-tours .zoomin img:hover {
+  width: 500px; height: 300px;
+  transform: scale(1.5);
+  z-index: 2;
+}
+/*
+section.round-tours  .img-hover-zoom {
+  height: 300px;
+  width:330px;
+  overflow: hidden; 
+}
+section.round-tours  .img-hover-zoom img  {
+  transition: transform .5s ease-in-out;
+  transform: scale(1.4);
+  transform-origin: 0 0;
+}
+
+section.round-tours  .img-hover-zoom:hover img {
+  transform: scale(1.25) translateY(-30%);
+}*/
+section.round-tours .list ol li span{
+  font-weight: bolder;
+  color: #171717;
+}
+section.round-tours .list ol li{
+  line-height: 50px;
+  font-size: 20px;
+}
+section.round-tours .list ol{
+  bottom: 40px !important;
+  margin-bottom: 40px;
+}
+section.round-tours .title  h3.turkey {
+  padding: 10px 30px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  
+  margin-top: 60px;
+}
+footer.tours {
+  background-color: rgba(7, 231, 201, 0.925);
+  padding: 75px 0;
+  text-align: right;
+}
+footer.tours .col-6{
+ padding-right: 30px;
+}
+footer.tours  h3 {
+  font-size: 18px;
+  line-height: 45px;
+  color:  #171717;
+  margin-bottom: 30px;
+  position: relative; 
+}
+footer.tours  h3:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 35px;
+  height: 2px;
+  background-color: #5c5c5c; 
+
+}
+footer.tours ul {
+  padding: 0; 
+}
+footer.tours ul.social li a i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #333333;
+  color: #acacac;
+  transition: all 0.3s ease; 
+}
+footer.tours ul.social li {
+  margin-right: 5px; 
+}
+
+footer.tours ul.contact-us li {
+  margin-bottom: 35px;
+  font-size: 18px;
+  color: #676767; 
+}
+footer.tours  ul.contact-us li:last-of-type {
+  margin-bottom: 0;
+}
+footer.tours  ul.contact-us li i {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #333333;
+  color: #acacac;
+  margin-left: 20px;
+}
+
+section.round-tours  .logo a img {
+  max-width: 15%;
+  text-align: right;
+  margin-left: 1155px; 
+ 
+  padding:0 30px;
+}
+section.round-tours  .logo {
+  background-color:rgba(7, 231, 201, 0.925);
+  opacity: .6;
+}
+
+footer.tours-eyg {
+  background-color:#25a9dd;
+  
+  padding: 75px 0;
+  text-align: right;
+}
+section.round-tours  .logo-eyg {
+  background-color:#25a9dd;
+  opacity: .6;
+}
+section.round-tours  .logo-eyg a img {
+  max-width: 15%;
+  text-align: right;
+  margin-left: 1155px; 
+ 
+  padding:0 30px;
+}
+form{
+  top:40px;
+  min-height: 80vh;
+  padding: 30px 90px;
+}
+form .title h3 {
+padding:228px 68px 44px;;
+text-align: center !important;
+bottom: 40px ;
+color: indianred;
+}
+form .filed-register {
+  margin: 0 0 ;
+  margin-bottom: 15px;
+
+}
+form .filed-register:hover,
+form .filed-register:active,
+form .filed-register:focus{
+  box-shadow: 0 0 0 indianred;
+  border: 1px solid indianred;
+}
+form button {
+  border: 2px solid indianred;
+  background-color: #FFF;
+  padding: 10px;
+  border-radius: 3px;
+  color: indianred;
+  margin: 15px 10px;
+}
+form button:hover{
+  color: #FFF;
+  background-color: indianred;
+}
+form .filed-registerinto {
+  margin: 0 0 ;
+  margin-bottom: 15px;
+
+}
+form .filed-registerinto:hover,
+form .filed-registerinto:active,
+form .filed-registerinto:focus{
+  box-shadow: 0 0 0 indianred;
+  border: 1px solid indianred;
+}
+form.into{
+  top:40px;
+  min-height: 80vh;
+  padding: 30px 252px;
+}
+form.into .title h3 {
+padding:228px 68px 44px;;
+text-align: center !important;
+bottom: 40px ;
+color: indianred;
+}
+@media (max-width:1199px){
+  nav.navbar a img {
+    max-width: 17%;
+    text-align: right!important;
+    margin-left: 800px;
+    padding: 0 21px;
+}
+section.services h1.ser {
+  margin-right: 264px;
+}
+section.tours h1{
+  margin-right: 151px;
+}
+}
+@media (max-width:991px){
+  header .overlay img{
+      max-width: 22%;
+  }
+  section.services h1.ser{
+    margin-right: 140px !important;
+    
+  }
+
+  section.tours h1{
+    margin-right: 43px !important;
+    white-space: nowrap;
+  }
+  /*
+  nav.navbar a img {
+    max-width: 17%;
+    text-align: right!important;
+    margin-left: 1170px;
+    padding: 30px 41px;
+    margin-top: 50px;
+}*/
+nav.navbar a img {
+  margin-left: -30px;
+  padding: 0 0;
+  margin: -91px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+  padding-right: -10.5rem !important;
+  padding-left: -2.5rem !important;
+  font-size: 20px;
+}
+.navbar-toggler {
+  margin-top:28px;
+  padding-right: 44px;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: -10.5rem!important;
+  padding-left: -2.5rem!important;
+  font-size: 20px;
+  text-align: right;
+  padding-right: 55px;
+  margin-bottom: 10px;
+}
+}
+@media (max-width:767px){
+  section.round-tours  .logo a img {
+    max-width: 25%;
+
+  }
+header .overlay img{
+    max-width: 35% !important;
+}
+section.services h1.ser{
+  margin-right:0px !important;
+  
+}
+
+section.tours h1{
+    font-size: 24px;
+  margin-right:-80px !important;
+  white-space: nowrap;
+}
+section.tours .card {
+margin-bottom: 40px;
+}
+nav.navbar a img {
+  padding: 0;
+    margin: -95px;
+    margin-left: -120px ;
+    margin-top: -166px;
+  max-width: 25%;
+}
+form.into {
+  top: 40px;
+  min-height: 80vh;
+  padding: 30px 115px;
+}
+}
+@media (max-width: 625px){
+
+nav.navbar a img {
+    padding: 0;
+    margin: -170px -143px -95px -120px;
+    max-width: 25%;
+}
+section.tours h1{
+  margin-right: 0;
+ 
+}
+}
+@media (max-width:575px){
+  section.round-tours  .logo a img {
+    max-width: 30%;
+
+  }
+header .overlay img{
+    max-width: 30% !important;
+}
+section.services h1.ser{
+  margin-right: -15px !important;
+  text-align: center !important;
+}
+
+section.tours h1{
+    font-size: 24px;
+  margin-right:-100px !important;
+  white-space: nowrap;
+  text-align: center !important;
+}
+section.tours .card {
+  margin-bottom: 40px;
+}
+nav.navbar a img {
+  margin: 0;
+  margin-top: -82px;
+  margin-left: -125px;
+  max-width: 15%;
+}
+}
