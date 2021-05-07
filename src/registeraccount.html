@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سفرني</title>
-    
     <script type="text/html" src="{require('index.js')}"></script>
-
+<!--<link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/scss/styles.scss">
+<link rel="stylesheet" href="./src/css/styles.css">-->
 </head>
 <body>
     <nav class="navbar navbar-expand-lg fixed-top noTransparrent" id="navBar">
@@ -42,7 +43,7 @@
     </nav>
     <!--part firm defined-->
     <div class="container-fluid">
-<form action=""  onsubmit ="return verifyPassword()" Get="method" name="PasswordField">
+<form action=""   Get="method" name="PasswordField">
     <div class="row ">
         <div class="title text-center">
             <h3>
@@ -51,35 +52,36 @@
         </div>
        </div>
         <div class="row">
-            <div class="col-md-6">
-                <input type="text" class="form-control filed-register"
-                placeholder="الاسم " name="name" required>
+            <div class="col-md-6 ">
+                <input type="text" class="form-control filed-register "
+                placeholder="الاسم " name="name"  min=3 required>
             </div>
             <div class="col-md-6">
                 <input type="date" class="form-control  filed-register"
                 placeholder="تاريخ الميلاد " name="b-date" min="1960" required>
             </div>
             <div class="col-md-6">
-                <input type="email" class="form-control filed-register"
+                <input type="email" class="form-control filed-register" 
                 placeholder=" البريد الالكتروني " name="email" required>
             </div>
             <div class="col-md-6">
-                <input type="password" class="form-control filed-register"
-                placeholder=" كلمة المرور " name="password" id="password" min-length="5" max-length="15" required>
+                <input type="password" class="form-control filed-register" 
+                placeholder=" كلمة المرور " name="password" id="password" minlength="5" maxlength="15" required>
             </div>
             <div class="col-md-6 ">
-                <input type="password" class="form-control filed-register"
+                <input type="password" class="form-control filed-register" 
                 placeholder="  تأكيد كلمة المرور " name="confirm_password" id="confirm_password"
-                min-length="5" max-length="15" required>
+                minlength="5" maxlength="15" required>
+                <span id='message'></span>
             </div>
             <div class="col-md-6"></div> 
             <a href="index.html" class="text-right">
-                <button id="init-account" type="submit" value="submit" class="account-btn">
+                <button id="init-account" type="submit" value="submit"  class="account-btn">
         إنشاء حساب جديد
                 </button>
             </a>
        <a href="registerinto.html">
-                <button type="submit" id="register-account"  class="account-btn">
+                <button type="button" id="register-account" value="submit"  class="account-btn">
               هل لديك حساب؟
                 </button>
            </a>

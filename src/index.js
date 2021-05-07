@@ -1,64 +1,52 @@
 
-//import './scss/tours.scss';
-//import './css/tours.css';
-import 'bootstrap-v4-rtl/dist/css/bootstrap.min.css';
-
+import './scss/styles.scss';
 import './css/style.css';
+//import '../node_modules/@laylazi/bootstrap-rtl-scss/scss/bootstrap-rtl.scss';
+import 'bootstrap-v4-rtl/dist/css/bootstrap.min.css';
 import 'jquery/dist/jquery.min';
 import 'popper.js/dist/popper.min';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import '@fortawesome/fontawesome-free/js/all.min';
 import 'jquery.animate';
-
+import 'jquery'
 //$('.main-btn').click(function(){
 //window.location.herf='./src/tours.html';
 //})
-
+//window.onload = function() {
+  document.getElementById("myButtonne").onclick = function () {
+    location.href = "toursEygpt.html";
+};
     document.getElementById("myButton").onclick = function () {
         location.href = "toursTourkey.html";
     };
-
-    document.getElementById("myButtonn").onclick = function () {
-        location.href = "toursEygpt.html";
-    };
-
-  /*  document.getElementById("register-account").onclick = function () {
-        location.href = "registerinto.html";
-    };*/
-    $("register-account").click(function () {
-        $("form").attr("action", "registerinto.html");
- });
- /*
- function validate(){
-
-    if(!document.getElementById("password").value==document.getElementById("confirm_password").value)alert("Passwords do no match");
-    return document.getElementById("password").value==document.getElementById("confirm_password").value;
-   return false;
-    }
-*/
-/*
-function validate(){
-
-    var a = document.getElementById("password").value;
-    var b = document.getElementById("confirm_password").value;
-    if (a!=b) {
-       alert("Passwords do no match");
-       return false;
-    }
-}
-*/
-function verifyPassword() {
-    var pw = document.getElementById("password").value;  
-    if(pw.length < 5) {  
-        document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
-        return false;  
-     }  
+//};
+  document.getElementById("init-account").onclick=function(event){
+    document.getElementsByClassName("account-btn").select();
+  }
      
-   //maximum length of password validation  
-     if(pw.length > 15) {  
-        document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
-        return false;  
-     } else {  
-        alert("Password is correct");  
-     }  
-    }
+   /*
+    var check = function() {
+        if (document.getElementById('password').value ==
+          document.getElementById('confirm_password').value) {
+          document.getElementById('message').style.color = 'green';
+          document.getElementById('message').innerHTML = 'matching';
+        } else {
+          document.getElementById('message').style.color = 'red';
+          document.getElementById('message').innerHTML = 'not matching';
+        }
+      }*/
+      
+      var password=document.getElementById("password");
+      var confirm_password=document.getElementById("confirm_password");
+      var button_login=document.getElementById("register-account");
+     button_login.onclick=function(event){
+       if (confirm_password.value==password.value)
+       {
+         alert("ok");
+       }
+       else {
+         alert("password don't match")
+       }
+     }
+        
+      
