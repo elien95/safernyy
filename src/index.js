@@ -13,6 +13,13 @@ import 'jquery'
 //window.location.herf='./src/tours.html';
 //})
 //window.onload = function() {
+/*  $(window).scroll(function(){
+    if($(this).scrollTop()>=500){
+       $("#navBar").addClass("noTransparrent");
+     }else{
+       $("#navBar").removeClass("noTransparrent");
+     }
+*/
   document.getElementById("myButtonne").onclick = function () {
     location.href = "toursEygpt.html";
 };
@@ -22,8 +29,14 @@ import 'jquery'
 //};
   document.getElementById("init-account").onclick=function(event){
     document.getElementsByClassName("account-btn").select();
-  }
-     
+  };
+
+  document.getElementById("init-accounts").onclick = function () {
+    location.href = "index.html";
+};
+document.getElementById("register-accountt").onclick = function () {
+  location.href = "registerinto.html";
+};
    /*
     var check = function() {
         if (document.getElementById('password').value ==
@@ -39,7 +52,7 @@ import 'jquery'
       var password=document.getElementById("password");
       var confirm_password=document.getElementById("confirm_password");
       var button_login=document.getElementById("register-account");
-     button_login.onclick=function(event){
+     button_login.onclick=function(e){
        if (confirm_password.value==password.value)
        {
          alert("ok");
@@ -49,4 +62,3 @@ import 'jquery'
        }
      }
         
-      

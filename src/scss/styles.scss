@@ -1,6 +1,68 @@
-$my_color:#000;
-$blanco:#ffff;
-body{
-    background-color: $my_color;
-    color:$blanco ;
+@import './_variable';
+@import './_tourkey';
+@import './_eygpt';
+@import './mixins';
+nav.navbar .navbar-collapse ul li a:hover{
+    color: $rose;
+  }
+
+  header  .overlay .title h1 {
+    top:30px;
+   
+    bottom: 10px;
+    padding: 150px 0 113px 30px;
+    color:$rose;
 }
+section.services { 
+    h1.ser {
+    
+        text-align: center !important;
+        color:  $rose;
+        top:10px;
+        bottom: 50px;
+        padding: 40px 216px;
+        margin-right: 405px;
+        margin-top: 40px;
+    }
+       h4{
+      font-size: 29px;
+      margin: 15px 30px;
+      bottom: 10px;
+      color: rgb(54, 52, 52);
+      font-weight: bolder;
+     border:2px solid $rose;
+     padding: 10px 0;
+  }
+}
+section.tours{
+ 
+@include button_color($rose ,$blanco);
+}
+
+footer {
+    background-color: $rose;
+    padding: 75px 0;
+    text-align: right;
+
+    ul.social li a i {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        border-radius: 2px;
+        background-color: #333333;
+        color: #acacac;
+        transition: all 0.3s ease; 
+      }
+  }
+ 
+  form{
+
+    @include button_colors($rose ,$blanco);
+  }
+ 
+
+
+
+
+

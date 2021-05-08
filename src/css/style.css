@@ -30,16 +30,18 @@ body{
      direction: rtl;
     overflow-x: hidden;
    
-}  
+} 
+
 .navbar-brand {
   display: inline-block;
   padding-top: .3125rem;
   padding-bottom: .3125rem;
   margin-left: -5rem ;
   font-size: 1.25rem;
-  line-height: inherit;
+ 
   white-space: nowrap;
 }
+/*
 .navbar-expand-lg>.container,
  .navbar-expand-lg>.container-fluid, 
  .navbar-expand-lg>.container-lg,
@@ -49,7 +51,7 @@ body{
   flex-wrap: nowrap;
   text-align: right;
   margin-right: 0;
-}
+}*/
 /*
 .container{
     margin-left: 0;
@@ -133,12 +135,10 @@ header  .overlay .title h1 {
     padding: 150px 0 113px 30px;
     color:indianred;
 }
-header  .overlay .paragrarphdefined p{
- 
-    line-height: 60px;
-    font-size: 27px;
-    padding: 10px 54px;
-
+header .overlay .paragrarphdefined p {
+  line-height: 125px;
+  font-size: 37px;
+  padding: 16px 101px;
 }
 
 /****************
@@ -152,12 +152,11 @@ section.services  h1.ser {
   /*  border-top:2px solid   indianred
 ;;*/
     text-align: center !important;
-    color:  indianred
-;
+    color:  indianred;
     top:10px;
     bottom: 50px;
     padding: 40px 216px;
-    margin-right: 480px;
+    margin-right: 405px;
     margin-top: 40px;
 }
 section.services .icon-serv  {
@@ -190,13 +189,12 @@ section.tours{
     margin: 40px 40px;
 }
 section.tours h1{
-    
     text-align: center !important;
     color:  indianred;
     top:10px;
     bottom: 80px;
     padding: 40px 265px;
-    margin-right: 412px;
+    margin-right: 260px;
     margin-top: 40px;
 }
 section.tours .card{
@@ -519,13 +517,13 @@ color: indianred;
 }
 @media (max-width:1199px){
   nav.navbar a img {
-    max-width: 17%;
+    max-width: 19%;
     text-align: right!important;
-    margin-left: 760px !important;
-    padding: 0 21px;
+    margin-left: 680px !important;
+   /* padding: 0 21px;*/
 }
 section.services h1.ser {
-  margin-right: 264px;
+  margin-right: 328px;
 }
 section.tours h1{
   margin-right: 151px;
@@ -541,7 +539,7 @@ section.tours h1{
   }
 
   section.tours h1{
-    margin-right: 43px !important;
+    margin-right: 20px !important;
     white-space: nowrap;
   }
   /*
@@ -555,10 +553,10 @@ section.tours h1{
 nav.navbar a img {
   padding-right: -19px;
   /* padding: 3px; */
-  margin-right: 820px;
+  margin-right: 750px;
   /* text-align: left; */
   margin-top: -78px;
-  max-width: 8%;
+  max-width: 11%;
 }
 .navbar-expand-lg .navbar-nav .nav-link{
   padding-right: -10.5rem !important;
@@ -588,13 +586,13 @@ header .overlay img{
 }
 section.services h1.ser{
   margin-right:0px !important;
-  padding-right: 320px;
+  padding-right: 300px;
 
 }
 
 section.tours h1{
     font-size: 24px;
-  margin-right:3px !important;
+  margin-right:-3px !important;
   white-space: nowrap;
 }
 section.tours .card {
@@ -631,6 +629,7 @@ section.tours h1{
 }
 }
 @media (max-width:575px){
+  
   section.round-tours  .logo a img {
     max-width: 30%;
 
@@ -657,7 +656,7 @@ nav.navbar a img {
   margin-top: -82px;
   margin-left: -125px;
   max-width: 9%;
-  margin-right:295px;
+  margin-right:300px;
 }
 section.round-tours .logo-eyg a img {
   max-width: 25%;
@@ -665,6 +664,12 @@ section.round-tours .logo-eyg a img {
   margin-left: 1395p;
   padding: 11px 10px;
 }
+header .overlay .paragrarphdefined p {
+  line-height: 112px;
+  font-size: 31px;
+  padding: 15px 30px;
+}
+
 }
 @media (max-width: 400px){
 form.into {
@@ -672,15 +677,21 @@ form.into {
     min-height: 80vh;
     padding: 30px 22px;
 }
+/*
 nav.navbar a img {
   max-width: 9%;
   margin: -92px 267px 0 -125px;
-}
+}*/
 form{
   padding: 30px 37px;
 }
 form .title h3 {
   padding: 228px 40px 44px !important;
   white-space: nowrap;
+}
+}
+@media (min-width: 576px){
+.container, .container-sm {
+    max-width: 849px !important;
 }
 }
