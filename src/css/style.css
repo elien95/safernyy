@@ -308,13 +308,34 @@ padding: 10px 50px;
 line-height: 40px;
 }
 section.round-tours .img-hover-zoom img {
-  transition: transform .5s ease;
+  /*transition: transform .5s ease;
   height: 200px; width: 350px;
-  overflow: hidden;
-  bottom: 40px !important;
+  overflow: hidden;*/
+
+  
+  transition: transform .2s;
+  width: 340px;
+  height: 200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
 }
 section.round-tours .img-hover-zoom:hover img {
-  transform: scale(.8);
+ /* transform: scale(.8);*/
+  /* -ms-transform: scale(1.5); /* IE 9 */
+ /* -webkit-transform: scale(1.5); /* Safari 3-8 */
+  /*transform: scale(1.5);
+z-index: 1;*/
+
+width: 80%;
+height:200px;
+opacity: 1;
+transform: scale(2);
+position: absolute;
+display:block;
+text-align: center;
+z-index: 2;
+margin: 0 auto;
 }
 
 /*
@@ -575,6 +596,14 @@ nav.navbar a img {
   padding-right: 55px;
   margin-bottom: 10px;
 }
+section.round-tours .img-hover-zoom img {
+  transition: transform .2s;
+  width: 254px;
+  height: 200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+}
 }
 @media (max-width:767px){
   section.round-tours  .logo a img {
@@ -616,6 +645,14 @@ section.round-tours .logo-eyg a img {
   margin-left: 1395p;
   padding: 11px 30px;
 }
+section.round-tours .img-hover-zoom img {
+  transition: transform .2s;
+  width: 369px;
+  height: 200px;
+  margin: 0 auto;
+  z-index: 1;
+  position: relative;
+
 }
 @media (max-width: 625px){
   nav.navbar a img {
@@ -693,5 +730,6 @@ form .title h3 {
 @media (min-width: 576px){
 .container, .container-sm {
     max-width: 849px !important;
+}
 }
 }
