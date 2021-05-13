@@ -633,7 +633,7 @@ form button:hover{
 form .filed-registerinto {
   margin: 0 0 ;
   margin-bottom: 15px;
-  max-width: 70%;
+  max-width: 70% !important;
 
 }
 form .filed-registerinto:hover,
