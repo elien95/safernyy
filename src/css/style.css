@@ -27,7 +27,7 @@ body{
     font-family: "katibeh-v12-latin-regular", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
      font-size: 25px;
      color:#555555;
-     direction: rtl;
+     direction: rtl;   
     overflow-x: hidden;
    
 } 
@@ -62,24 +62,33 @@ body{
  main page firm
 **********/
 nav.navbar{
-  background: rgba(7, 231, 201, 0.925);
-  background: linear-gradient(to left ,
+ /* background:rgb(205, 92, 92,0.8);/*rgba(7, 231, 201, 0.925);*/
+/*background: linear-gradient(to left ,
   rgba(7, 231, 201, 0.925)0%,
   rgba(242,220,230),
-  rgba(244,218,225,0.8)100%);
+  rgba(244,218,225,0.8)100%);*/
+  background:rgb(92, 9, 49);/* rgba(7, 231, 201, 0.925);*/
+  background: linear-gradient(to left ,
+  rgba(91,9,49)0%,
+  rgba(91,9,49),
+  rgba(18,3,10)100%);
   padding: 0 0;
 }
 
 nav.navbar a img{
-  max-width: 17%;
+  max-width: 23%;
   text-align: right !important;
-  margin-left: 762px !important;
+ margin-left: 762px !important;
   padding:0px 30px;
+}
+nav.navbar a h1{
+  color:#fff;
 }
 header {
     min-height: 50vh;
     top: 15px;
-    background-image: url(../images/bg-1.jpg);
+  /* background-image: url(../images/amm.jpg) !important;*/
+   /*background-color: #04093d;*/
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -87,58 +96,70 @@ header {
     text-align: right;
 }
 header .overlay{
-    background: rgba(7, 231, 201, 0.925);
+ background:rgb(92, 9, 49);/* rgba(7, 231, 201, 0.925);*/
     background: linear-gradient(to left ,
-    rgba(7, 231, 201, 0.925)0%,
-    rgba(242,220,230),
-    rgba(244,218,225,0.8)100%);
-    min-height: 120vh;
+    rgba(91,9,49)0%,
+    rgba(91,9,49),
+    rgba(18,3,10)100%),
+    linear-gradient(to bottom,
+    rgba(91,9,49)0%,
+    rgba(91,9,49),
+    rgba(18,3,10)100%);
+    min-height: 100vh;
+}
+nav{
+  padding: 0 20px;
+}
+nav .container-fluid{
+  margin-left: 60px;
+
 }
 ul.navbar-nav{
   padding: 0 0;
 }
 nav.navbar .navbar-collapse ul li a {
   font-size: 21px;
-  color:#171717;
+  color:#fff;
   margin: 0 ;
-  margin-left: 4px;
  white-space: nowrap;
+ padding:10px ;
+ transition: all 0.5s ease;
+
 }
-nav.navbar .navbar-collapse ul li a:hover{
-  color: indianred;
+nav.navbar  ul.navbar-nav li a.nav-link:hover,
+nav.navbar  ul.navbar-nav li 
+ a.nav-link.active{
+  color: #5b0931;
+  background-color: #fff ;
 }
-/*header .overlay a img {
-    max-width: 17%;
-    text-align: right;
- /*   margin-left: 1155px;
-    margin-top: 20px;
-    padding:0 30px;
+
+ header .overlay .descriptiomfirm {
+position: relative;
+  min-width: 10%;
+  min-height: 10%;
+
 }
-header .overlay a.register-into {
- margin-right: 750px;
- margin-left: 10px;
-  text-decoration: none;
-  font-size: 30px;
-  color: #171717;
-}
-header .overlay a.register-account {
-  
-   text-decoration: none;
-   font-size: 30px;
-   color: #171717;
- }*/
+header .overlay .descriptiomfirm{
+  position: absolute;
+  top:160px;
+  box-shadow: 10px 10px 4px #2d0b16 ;
  
+}
 header  .overlay .title h1 {
-    top:30px;
-   
+  /*  top:30px;*/
+   text-align: right;
     bottom: 10px;
-    padding: 150px 0 113px 30px;
-    color:indianred;
+    padding:15px;
+    margin-right:49px ; /* 150px 0 113px 30px;*/
+    color:#fff;
+    
 }
 header .overlay .paragrarphdefined p {
-  line-height: 125px;
-  font-size: 37px;
-  padding: 16px 101px;
+  line-height: 60px;
+  font-size: 18px;
+  padding: 16px 72px 16px 116px;
+  color:#fff;
+ font-style: italic;
 }
 
 /****************
@@ -148,32 +169,60 @@ section.services {
     bottom:    40px ;
     
 }
+section.services .card-header {
+  max-width: 194%;
+  padding: 0.75rem 9.25rem !important;
+}
+section.services .card{
+  background-color: #ffff;
+  width: 97%;
+  height: 187px;
+  transition:all 1s ease;
+  margin-bottom: 89px;
+  margin:0 10px ;
+  margin-bottom: 40px;
+  }
+  section.services .card:hover{
+      height: 280px;
+  }
+  section.services .card .card-block p{
+    font-size: 20px;
+    line-height: 25px;
+    opacity: 0;
+    transition: ease 1s ease;
+    
+}
+section.services .card:hover .card-block p{
+    opacity: 1;
+}
 section.services  h1.ser {
   /*  border-top:2px solid   indianred
 ;;*/
     text-align: center !important;
-    color:  indianred;
+    color: rgba(91,9,49);
     top:10px;
     bottom: 50px;
-    padding: 40px 216px;
-    margin-right: 405px;
+    padding: 40px 163px;
+    margin-right: 317px;
     margin-top: 40px;
+    margin: 40px 317px 0 317px;
 }
 section.services .icon-serv  {
-    font-size: 20px;
+    font-size: 40px;
     border: 2px ; 
     border-radius: 50%;
     line-height: 20px;
     margin-bottom: 20px;
-    color:  indianred !important;
+    color:  rgba(91,9,49);
+    padding-top: 31px;
 }
 section.services h4{
     font-size: 29px;
     margin: 15px 30px;
     bottom: 10px;
-    color: rgb(54, 52, 52);
+    color:  rgba(91,9,49);
     font-weight: bolder;
-   border:2px solid indianred;
+  
    padding: 10px 0;
 }
 section.services p {
@@ -190,15 +239,16 @@ section.tours{
 }
 section.tours h1{
     text-align: center !important;
-    color:  indianred;
+    color:  rgba(91,9,49);
     top:10px;
     bottom: 80px;
     padding: 40px 265px;
-    margin-right: 260px;
+    margin-right: 118px;
+    margin-left: 30px;
     margin-top: 40px;
 }
 section.tours .card{
-margin-right: 30px;
+margin-right: 10px;
 padding: 10px;
 }
 section.tours .card .card-body p
@@ -208,21 +258,25 @@ section.tours .card .card-body p
 }
 section.tours .card .btn-main-tours{
     padding:5px 10px;
-    border: 2px solid   indianred;
+    border: 2px solid   rgba(91,9,49);
     border-radius: 3px;
  background-color:#fff;
- color:   indianred;
+ color:   rgba(91,9,49);
 }
 section.tours .card .btn-main-tours:hover{
-background-color:   indianred;
+background-color:   rgba(91,9,49);
 color: #fff;
 }
 /***************
 footer main page
 ******************/
-footer {
-    background-color: indianred;
-    padding: 75px 0;
+footer.most-pages {
+  background:rgb(92, 9, 49) !important;
+  background: linear-gradient(to left ,
+  rgba(91,9,49)0%,
+  rgba(91,9,49),
+  rgba(18,3,10)100%) !important;
+  padding: 75px 0;
     text-align: right;
   }
   footer .col-6{
@@ -265,7 +319,7 @@ footer ul {
 footer ul.contact-us li {
     margin-bottom: 35px;
     font-size: 18px;
-    color: #676767; 
+    color: #fff; 
   }
   footer  ul.contact-us li:last-of-type {
     margin-bottom: 0;
@@ -286,24 +340,31 @@ tours psges
 ********************/
 section.round-tours .title h1{
   margin-bottom: 40px;
+  box-shadow: 10px 10px 4px #2dd417 ;
+  margin-top: 40px;
+}
+section.round-tours .title.eyg h1{
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 4px #daa51f; ;
   margin-top: 40px;
 }
 section.round-tours .title h3 {
   padding: 10px 30px;
   margin-right: 20px;
-  margin-bottom: 30px;
-
+  margin-bottom: 7px !important;
+ font-size: 24px;
 
 }
 section.round-tours h5{
   padding: 10px 30px;
-  margin-right: 20px;
+  margin-right: 28px;
   margin-bottom: 25px;
   font-weight: bolder;
   color: #171717;
+  font-size: 24px;
 }
 section.round-tours  p {
-font-size: 20px;
+font-size: 17px;
 padding: 10px 50px;
 line-height: 40px;
 }
@@ -311,8 +372,6 @@ section.round-tours .img-hover-zoom img {
   /*transition: transform .5s ease;
   height: 200px; width: 350px;
   overflow: hidden;*/
-
-  
   transition: transform .2s;
   width: 340px;
   height: 200px;
@@ -327,7 +386,7 @@ section.round-tours .img-hover-zoom:hover img {
   /*transform: scale(1.5);
 z-index: 1;*/
 
-width: 80%;
+width: 80%; 
 height:200px;
 opacity: 1;
 transform: scale(2);
@@ -337,7 +396,42 @@ text-align: center;
 z-index: 2;
 margin: 0 auto;
 }
-
+section.round-tours .card{
+  background-color:#30e204b2;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 25px;
+ 
+}
+section.round-tours .card .card-header{
+  border-bottom: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+}
+section.round-tours .card .card-header h5 a{
+  font-size: 18px;
+  color: #ffff;
+  display: block;
+  position: relative;
+}
+section.round-tours .card .card-body {
+  flex: 1 1 auto;
+  min-height: 5px;
+  padding: 1.25rem;
+  font-size: 15px;
+  line-height: 26px;
+  padding: 33px 1.25rem 1.25rem;
+  color: #fff; 
+  height: 150px;
+}
+section.round-tours .card .card-header h5 a{
+  text-decoration: none;
+}
+section.round-tours .card .card-header h5 a i{
+  position: absolute;
+  top: 2px;
+  left: 5px;
+}
 /*
 section.round-tours .zoomin img{
     height: 200px; width: 350px;
@@ -388,7 +482,11 @@ section.round-tours .title  h3.turkey {
   margin-top: 60px;
 }
 footer.tours {
-  background-color: rgba(7, 231, 201, 0.925);
+  /*background-color: rgb(15, 201, 15) !important;*/
+  background:linear-gradient(to left ,
+  rgb(15, 201, 15)  0% ,
+  rgb(13, 207, 13)   ,
+  rgb(20, 20, 20)100%) !important;
   padding: 75px 0;
   text-align: right;
 }
@@ -410,7 +508,7 @@ footer.tours  h3:before {
   bottom: 0;
   width: 35px;
   height: 2px;
-  background-color: #5c5c5c; 
+  background-color: #171717; 
 
 }
 footer.tours ul {
@@ -423,7 +521,7 @@ footer.tours ul.social li a i {
   text-align: center;
   border-radius: 2px;
   background-color: #333333;
-  color: #acacac;
+  color: #fff;
   transition: all 0.3s ease; 
 }
 footer.tours ul.social li {
@@ -433,7 +531,7 @@ footer.tours ul.social li {
 footer.tours ul.contact-us li {
   margin-bottom: 35px;
   font-size: 18px;
-  color: #676767; 
+  color: #fff; 
 }
 footer.tours  ul.contact-us li:last-of-type {
   margin-bottom: 0;
@@ -457,19 +555,27 @@ section.round-tours  .logo a img {
   padding:0 30px;
 }
 section.round-tours  .logo {
-  background-color:rgba(7, 231, 201, 0.925);
-  opacity: .6;
+  background:  rgb(15, 201, 15)  ;
+  background:linear-gradient(to left ,
+  rgb(15, 201, 15)  0% ,
+  rgb(13, 207, 13)   ,
+  rgb(20, 20, 20)100%) !important;;
+ 
 }
 
 footer.tours-eyg {
-  background-color:#25a9dd;
+  background: linear-gradient(to left ,
+  rgb(231, 169, 75) 0% ,
+  rgba(18,3,10)100%) !important;;
   
   padding: 75px 0;
   text-align: right;
 }
 section.round-tours  .logo-eyg {
-  background-color:#25a9dd;
-  opacity: .6;
+  background: linear-gradient(to left ,
+  rgb(240, 167, 58) 0% ,
+  rgb(224, 149, 36)  ,
+  rgba(18,3,10)100%) !important;;
 }
 section.round-tours  .logo-eyg a img {
   max-width: 15%;
@@ -482,65 +588,82 @@ form{
   top:40px;
   min-height: 80vh;
   padding: 30px 90px;
-  border: 4px solid indianred;
-  border-radius: 3px;
 }
 form .title h3 {
-padding:228px 68px 44px;;
+padding:140px 17px 44px 57px;
 text-align: center !important;
 bottom: 40px ;
-color: indianred;
+color: rgb(92, 9, 49);
+}
+form .input-icon{
+  position: absolute;
+  right:0px;
+  top:calc(50%-.5em);
+  padding:6px ;
+  color: #5b0931;
+  top:2px;
+}
+form .register-icon {
+  position: relative;
 }
 form .filed-register {
   margin: 0 0 ;
   margin-bottom: 15px;
+padding: 15px;
 
 }
 form .filed-register:hover,
 form .filed-register:active,
 form .filed-register:focus{
-  box-shadow: 0 0 0 indianred;
-  border: 1px solid indianred;
+  box-shadow: 0 0 0 rgb(92, 9, 49);
+  border: 1px solid rgb(92, 9, 49);
 }
 form button {
-  border: 2px solid indianred;
+  border: 2px solid rgb(92, 9, 49);
   background-color: #FFF;
   padding: 10px;
   border-radius: 3px;
-  color: indianred;
+  color: rgb(92, 9, 49);
   margin: 15px 10px;
 }
 form button:hover{
   color: #FFF;
-  background-color: indianred;
+  background-color: rgb(92, 9, 49);
 }
 form .filed-registerinto {
   margin: 0 0 ;
   margin-bottom: 15px;
+  max-width: 70%;
 
 }
 form .filed-registerinto:hover,
 form .filed-registerinto:active,
 form .filed-registerinto:focus{
-  box-shadow: 0 0 0 indianred;
-  border: 1px solid indianred;
+  box-shadow: 0 0 0 rgb(92, 9, 49);
+  border: 1px solid rgb(92, 9, 49);
 }
 form.into{
   top:40px;
   min-height: 80vh;
-  padding: 30px 252px;
+  padding: 30px 172px 29px 252px;
 }
 form.into .title h3 {
-padding:228px 68px 44px;;
+padding:150px  0 68px 44px;;
 text-align: center !important;
 bottom: 40px ;
-color: indianred;
+color: rgb(92, 9, 49) !important;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(-0.5em + -0.25rem + 2px);
+  padding: 0.375rem 1.75rem !important;
 }
 @media (max-width:1199px){
   nav.navbar a img {
     max-width: 19%;
     text-align: right!important;
-    margin-left: 680px !important;
+    margin-left: 605px !important;
    /* padding: 0 21px;*/
 }
 section.services h1.ser {
@@ -555,7 +678,7 @@ section.tours h1{
       max-width: 22%;
   }
   section.services h1.ser{
-    margin-right: 214px !important;
+    margin-right: 263px !important;
     
   }
 
@@ -574,7 +697,7 @@ section.tours h1{
 nav.navbar a img {
   padding-right: -19px;
   /* padding: 3px; */
-  margin-right: 750px;
+  margin-right: 676px;
   /* text-align: left; */
   margin-top: -78px;
   max-width: 11%;
@@ -693,7 +816,7 @@ nav.navbar a img {
   margin-top: -82px;
   margin-left: -125px;
   max-width: 9%;
-  margin-right:300px;
+  margin-right:400px;
 }
 section.round-tours .logo-eyg a img {
   max-width: 25%;
@@ -702,17 +825,20 @@ section.round-tours .logo-eyg a img {
   padding: 11px 10px;
 }
 header .overlay .paragrarphdefined p {
-  line-height: 112px;
-  font-size: 31px;
+  line-height: 55px;
+  font-size: 15px;
   padding: 15px 30px;
 }
-
 }
 @media (max-width: 400px){
 form.into {
     top: 40px;
     min-height: 80vh;
     padding: 30px 22px;
+}
+section.tours h1 {
+  font-size: 24px;
+  margin-right: -202px!important;
 }
 /*
 nav.navbar a img {
@@ -723,8 +849,28 @@ form{
   padding: 30px 37px;
 }
 form .title h3 {
-  padding: 228px 40px 44px !important;
+  padding: 138px 40px 44px!important;
   white-space: nowrap;
+}
+section.services h1.ser {
+  margin-right: -154px!important;;
+}
+header .overlay .paragrarphdefined p {
+  line-height: 112px;
+  font-size: 13px;
+  padding: 15px 30px;
+  line-height: 48px;
+}
+header .overlay .title h1 {
+  font-size: 30px;
+}
+nav.navbar a img {
+  max-width: 12%;
+  margin: -79px 250px 0px -130px;
+}
+form .filed-registerinto {
+  margin: 0 0 15px;
+  max-width: 87%;
 }
 }
 @media (min-width: 576px){

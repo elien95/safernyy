@@ -1,6 +1,11 @@
 $rose:indianred;
 $blanco:#fff;
-$amarillo: #e7a94b;
-$rojo:rgb(15, 201, 15);
+$amarillo: linear-gradient(to left ,
+rgb(231, 169, 75) 0% ,
+rgba(18,3,10)100%) !important;
+$rojo:linear-gradient(to left ,
+rgb(15, 201, 15)  0% ,
+rgba(18,3,10)100%) !important;
+//rgb(15, 201, 15);
 
 //$rojo:rgb(209, 22, 22);
