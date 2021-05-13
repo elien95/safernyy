@@ -76,7 +76,7 @@ nav.navbar{
 }
 
 nav.navbar a img{
-  max-width: 23%;
+  max-width: 20%;
   text-align: right !important;
  margin-left: 762px !important;
   padding:0px 30px;
@@ -156,7 +156,7 @@ header  .overlay .title h1 {
 }
 header .overlay .paragrarphdefined p {
   line-height: 60px;
-  font-size: 18px;
+  font-size: 25px;
   padding: 16px 72px 16px 116px;
   color:#fff;
  font-style: italic;
@@ -205,7 +205,7 @@ section.services  h1.ser {
     padding: 40px 163px;
     margin-right: 317px;
     margin-top: 40px;
-    margin: 40px 317px 0 317px;
+    margin: 40px 449px 0 409px;
 }
 section.services .icon-serv  {
     font-size: 40px;
@@ -243,7 +243,7 @@ section.tours h1{
     top:10px;
     bottom: 80px;
     padding: 40px 265px;
-    margin-right: 118px;
+    margin-right: 232px;
     margin-left: 30px;
     margin-top: 40px;
 }
@@ -364,7 +364,7 @@ section.round-tours h5{
   font-size: 24px;
 }
 section.round-tours  p {
-font-size: 17px;
+font-size: 18px;
 padding: 10px 50px;
 line-height: 40px;
 }
@@ -418,8 +418,8 @@ section.round-tours .card .card-body {
   flex: 1 1 auto;
   min-height: 5px;
   padding: 1.25rem;
-  font-size: 15px;
-  line-height: 26px;
+  font-size: 19px;
+  line-height: 31px;
   padding: 33px 1.25rem 1.25rem;
   color: #fff; 
   height: 150px;
