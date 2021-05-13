@@ -76,7 +76,7 @@ nav.navbar{
 }
 
 nav.navbar a img{
-  max-width: 20%;
+  max-width: 18%;
   text-align: right !important;
  margin-left: 762px !important;
   padding:0px 30px;
@@ -879,3 +879,8 @@ form .filed-registerinto {
 }
 }
 }
+@media (min-width: 500px){
+form .filed-registerinto {
+  margin: 0px 0 16px;
+  max-width: 110%;
+}}
