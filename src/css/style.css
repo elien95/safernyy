@@ -882,5 +882,5 @@ form .filed-registerinto {
 @media (min-width: 500px){
 form .filed-registerinto {
   margin: 0px 0 16px;
-  max-width: 110%;
+  max-width: 90% !important;
 }}
